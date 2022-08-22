@@ -32,15 +32,14 @@
 
 	</style>
 	<title>Document</title>
+
 	<script type="text/javascript">
+		function suc(p){
+			console.log(p);
+		}
 		window.onload = function(){
 			if (navigator.geolocation) {
-				console.log(navigator.geolocation.getCurrentPosition);
 				navigator.geolocation.getCurrentPosition(suc)
-			}
-
-			function suc(p){
-				console.log(p);
 			}
 		}
 	</script>
